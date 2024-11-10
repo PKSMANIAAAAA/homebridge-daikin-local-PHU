@@ -662,7 +662,7 @@ Daikin.prototype = {
           this.log.debug('getCurrentTemperature using %s', this.get_sensor_info);
           this.sendGetRequest(this.get_sensor_info, body => {
                   const responseValues = this.parseResponse(body);
-                  const currentTemperature = Number.parseFloat(responseValues.htemp);
+                  const currentTemperature = this.tempoffset + Number.parseFloat(responseValues.htemp);
                   callback(null, currentTemperature);
           });
         },
