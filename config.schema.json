@@ -1,5 +1,5 @@
 {
-  "pluginAlias": "Daikin-Local",
+  "pluginAlias": "Daikin-Local-PHU",
   "pluginType": "accessory",
   "schema": {
     "type": "object",
