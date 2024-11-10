@@ -234,8 +234,8 @@ function Daikin(log, config) {
 //  this.targetHeatingCoolingState = Characteristic.TargetHeatingCoolingState.AUTO;
 
   this.log.info('*****************************************************************');
-  this.log.info('  homebridge-daikin-local version ' + packageFile.version);
-  this.log.info('  GitHub: https://github.com/cbrandlehner/homebridge-daikin-local ');
+  this.log.info('  homebridge-daikin-local-phu version ' + packageFile.version);
+  this.log.info('  GitHub: https://github.com/cbrandlehner/homebridge-daiki');
   this.log.info('*****************************************************************');
   this.log.info('accessory name: ' + this.name);
   this.log.info('accessory ip: ' + this.apiIP);
@@ -1133,5 +1133,5 @@ getFanSpeed: function (callback) {
 module.exports = function (homebridge) {
   Service = homebridge.hap.Service;
   Characteristic = homebridge.hap.Characteristic;
-  homebridge.registerAccessory('homebridge-daikin-local', 'Daikin-Local', Daikin);
+  homebridge.registerAccessory('homebridge-Daikin-Local-PHU', 'Daikin-Local-PHU', Daikin);
 };
