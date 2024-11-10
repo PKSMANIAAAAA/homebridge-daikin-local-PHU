@@ -46,6 +46,14 @@
         "type": "boolean",
         "default": false
       },
+	 "tempoffset": {
+        "title": "TempOffset",
+	      "description": "temperature offset",
+        "type": "integer",
+        "default": 0,
+        "minimum": -5,
+        "maximum": 5
+      },
       "swingMode": {
         "title": "Swing mode",
         "description": "Apple Home allows to enable OSCILLATE. However most Daikin ACs support different swing modes. This setting allows to choose the swing-mode used if oscillation is enabled.",
